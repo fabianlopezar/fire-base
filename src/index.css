@@ -95,16 +95,12 @@ input[type="text"],
    width: 100%; max-width: 300px;
     box-sizing: border-box;
  }
-
-
-
-/* Estilo para el botón Register */
 .ButtonMenu {
   margin: 0 0.5rem;
   background-color: #bfd989;
-  border-radius: 15px; /* Reducido para hacerlo proporcional */
-  font-size: 30px; /* Reducido el tamaño de fuente */
-  padding: 0.2rem 0.5rem; /* Menos espacio interno */
+  border-radius: 15px; 
+  font-size: 30px; 
+  padding: 0.2rem 0.5rem; 
   cursor: pointer;
   color: #f29f05;
   border: 1px solid #ffffff;

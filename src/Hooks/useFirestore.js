@@ -15,13 +15,13 @@ import {
   import { nanoid } from "nanoid";
   
   export const useFirestore = () => {
-    const [data, setData] = useState([]);// donde se  guardan los datos
+    const [data, setData] = useState([]);
     const [error, setError] = useState();
     const [loading, setLoading] = useState({});
    
     const getData = async () => {
       try {
-        setLoading((prev) => ({ ...prev, getData: true }));//
+        setLoading((prev) => ({ ...prev, getData: true }));
         const dataRef = collection(db, "urls");
         const q = query(dataRef, where("uid", "==", auth.currentUser.uid));
         const querySnapshot = await getDocs(q);
